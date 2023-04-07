@@ -8,7 +8,7 @@ const PageBanner = () => {
     <section className='page-banner-section' style={{ backgroundImage: `url(${PageBannerBg})` }}>
       <Container>
         <Row className='align-items-center'>
-          <Col lg={8} xm>
+          <Col lg={8}>
             <div className='breadcrumb-text'>
               <p>From 15 March to June 29-2023</p>
               <h1>Revelado a través del querido caminar abortivo</h1>

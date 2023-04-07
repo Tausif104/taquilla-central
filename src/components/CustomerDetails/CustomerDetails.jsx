@@ -1,9 +1,16 @@
+import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Artists from '../Artists/Artists'
 import './customer-details.css'
 import { Link } from 'react-router-dom'
 
 const CustomerDetails = () => {
+  const [checked, setIsChecked] = useState(false)
+
+  const handleCheckSms = (e) => {
+    setIsChecked(e.target.checked)
+  }
+
   return (
     <section className='customer-details-section'>
       <Container>
@@ -67,6 +74,15 @@ const CustomerDetails = () => {
                         </div>
                       </div>
                     </Col>
+                    <Col xl={12}>
+                      <div className='form-group gender-choose'>
+                        <div className='checkboxes'>
+                          <p>
+                            <input onChange={handleCheckSms} checked={checked} type='checkbox' className='me-2' /> Send by SMS (+0.10€)
+                          </p>
+                        </div>
+                      </div>
+                    </Col>
                   </Row>
                 </form>
               </div>
@@ -78,12 +94,16 @@ const CustomerDetails = () => {
                     <span>€1,725.00</span>
                   </li>
                   <li>
+                    <span>Send by SMS</span>
+                    <span>€{checked ? 0.1 : 0}</span>
+                  </li>
+                  <li>
                     <span>Discount 10%</span>
                     <span className='red-text'>-€125.00</span>
                   </li>
                   <li>
                     <span>Total Price</span>
-                    <span>€1,600.00</span>
+                    <span>€{checked ? 1600.0 + 0.1 : 1600.0}</span>
                   </li>
                 </ul>
               </div>
