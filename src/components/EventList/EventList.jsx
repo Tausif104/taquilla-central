@@ -1,8 +1,20 @@
+import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Event from '../Event/Event'
 import './eventlist.css'
+import triangle from './triangle.svg'
 
 const EventList = () => {
+  const [dropDown, setDropDown] = useState('')
+
+  const handleSelect = () => {
+    if (dropDown == true) {
+      setDropDown(false)
+    } else {
+      setDropDown(true)
+    }
+  }
+
   return (
     <>
       <section className='eventlist-section'>
@@ -14,16 +26,21 @@ const EventList = () => {
               </div>
             </Col>
             <Col md={4}>
-              <div className='filter-button'>
-                <select className='form-select'>
-                  <option>Order By</option>
-                  <option value='Destacados'>Destacados</option>
-                  <option value='Mas Vendidos'>Mas Vendidos</option>
-                  <option value='Mas Recientes'>Mas Recientes</option>
-                  <option value='Mas Antiguos'>Mas Antiguos</option>
-                  <option value='Alfabeticamente, A-Z'>Alfabeticamente, A-Z</option>
-                  <option value='Alfabeticamente, Z-A'>Alfabeticamente, Z-A</option>
-                </select>
+              <div className='select-custom'>
+                <div onClick={handleSelect} className='select-button'>
+                  Most Recent <i className={`fas fa-angle-${dropDown == true ? 'up' : 'down'}`}></i>
+                </div>
+                {dropDown && (
+                  <div className='select-options'>
+                    <img src={triangle} alt='' />
+                    <div className='select-option'>Destacados</div>
+                    <div className='select-option'>Mas Vendidos</div>
+                    <div className='select-option'>Mas Recientes</div>
+                    <div className='select-option'>Mas Antiguos</div>
+                    <div className='select-option'>Alfabeticamente, A-Z</div>
+                    <div className='select-option'>Alfabeticamente, Z-A</div>
+                  </div>
+                )}
               </div>
             </Col>
           </Row>

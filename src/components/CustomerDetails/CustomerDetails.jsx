@@ -77,8 +77,9 @@ const CustomerDetails = () => {
                     <Col xl={12}>
                       <div className='form-group gender-choose'>
                         <div className='checkboxes'>
-                          <p>
-                            <input onChange={handleCheckSms} checked={checked} type='checkbox' className='me-2' /> Send by SMS (+0.10€)
+                          <p className='checkbox-custom'>
+                            <input onChange={handleCheckSms} checked={checked} type='checkbox' className='me-2' />
+                            <label htmlFor=''>Send by SMS (+0.10€)</label>
                           </p>
                         </div>
                       </div>
@@ -109,12 +110,15 @@ const CustomerDetails = () => {
               </div>
               <div className='terms-conditions'>
                 <div className='checkboxes'>
-                  <p>
-                    <input type='checkbox' /> I agree to have my personal information collected and processed for future marketing, promotional and publicity purposes, according to the terms
-                    established in the Additional Information on Data Protection.
+                  <p className='checkbox-custom'>
+                    <input type='checkbox' />
+                    <label htmlFor=''>
+                      I agree to have my personal information collected and processed for future marketing, promotional and publicity purposes, according to the terms established in the Additional
+                      Information on Data Protection.
+                    </label>
                   </p>
-                  <p>
-                    <input type='checkbox' /> By clicking Continue, you agree to our terms and conditions and the information on Data Protection.
+                  <p className='checkbox-custom'>
+                    <input type='checkbox' /> <label htmlFor=''>By clicking Continue, you agree to our terms and conditions and the information on Data Protection.</label>
                   </p>
                 </div>
                 <div className='confirm-buttons'>

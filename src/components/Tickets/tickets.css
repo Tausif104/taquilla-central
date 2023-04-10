@@ -242,6 +242,31 @@ a.solid-btn i {
   margin-bottom: 85px;
 }
 
+.ticket-count {
+  display: flex;
+}
+
+.ticket-count button {
+  background-color: #9b65e4;
+  border: none;
+  color: #fff;
+  width: 45px;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.ticket-count input {
+  width: 65px;
+}
+
+.ticket-count > * {
+  margin: 0 4px;
+}
+
+.ticket-count button:active {
+  background-color: #322670;
+}
+
 @media screen and (max-width: 1440px) {
   .ticket-lists > h4 span:after {
     width: 70%;

@@ -184,6 +184,49 @@ button.cancel-button {
   font-weight: 600;
 }
 
+p.checkbox-custom {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+p.checkbox-custom input {
+  width: 23px;
+  height: 23px;
+  accent-color: #9b65e4;
+  opacity: 0.3;
+}
+
+p.checkbox-custom input:checked {
+  opacity: 1;
+}
+
+.terms-conditions label {
+  margin-left: 5px;
+}
+
+.terms-conditions label {
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.terms-conditions .checkbox-custom:last-child {
+  margin-bottom: 0;
+}
+
+.terms-conditions .checkboxes p {
+  margin-bottom: 15px;
+}
+
+.terms-conditions .checkboxes p:last-child {
+  margin-bottom: 0;
+}
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  accent-color: #9b65e4;
+}
+
 @media screen and (max-width: 1199px) {
   .customer-details-section .artists-list {
     margin-top: 30px;

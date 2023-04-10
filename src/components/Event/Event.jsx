@@ -10,12 +10,13 @@ const Event = ({ column }) => {
     <>
       <Col xl={column} lg={6} md={6}>
         <div className={`event-item ${column == 3 ? 'small-event' : 'large-event'}`}>
-          <div
-            className='event-image'
-            style={{
-              backgroundImage: `url(${thumbnail})`,
-            }}
-          >
+          <div className='event-image'>
+            <div
+              className='event-image-thumbnail'
+              style={{
+                backgroundImage: `url(${thumbnail})`,
+              }}
+            ></div>
             <span className='event-date'>
               <img src={Calendar} alt='' /> 15-Mar-23
             </span>
