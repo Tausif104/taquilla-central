@@ -72,3 +72,18 @@
     padding: 50px 0;
   }
 }
+@media screen and (max-width: 767px) {
+  .select-custom {
+    text-align: left;
+  }
+
+  .select-options {
+    right: auto;
+    left: 0;
+  }
+
+  .select-options img {
+    right: auto;
+    left: 50px;
+  }
+}
