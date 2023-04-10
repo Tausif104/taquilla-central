@@ -27,7 +27,7 @@ const EventList = () => {
             </Col>
             <Col md={4}>
               <div className='select-custom'>
-                <div onClick={handleSelect} className='select-button'>
+                <div onClick={handleSelect} className={`select-button ${dropDown && 'active'}`}>
                   Most Recent <i className={`fas fa-angle-${dropDown == true ? 'up' : 'down'}`}></i>
                 </div>
                 {dropDown && (

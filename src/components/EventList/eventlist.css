@@ -2,14 +2,19 @@
   padding: 120px 0;
 }
 .select-button {
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #9b65e4;
-  display: inline-block;
-  color: #fff;
-  padding: 17px 37px;
   border-radius: 10px;
   cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 17px 37px;
+  color: #9b65e4;
+  border: 2px solid #9b65e4;
+}
+
+.select-button.active {
+  background-color: #9b65e4;
+  color: #fff;
 }
 
 .select-button i {
