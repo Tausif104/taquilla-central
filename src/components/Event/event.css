@@ -20,7 +20,7 @@
 }
 
 .event-item {
-  box-shadow: 13.6403px 27.2806px 81.8418px -6.82015px rgba(0, 0, 0, 0.04);
+  box-shadow: 13.6403px 27.2806px 81.8418px -6.82015px rgb(122 122 122 / 20%);
 }
 
 .event-content p.location {
