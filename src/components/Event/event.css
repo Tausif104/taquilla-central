@@ -210,7 +210,7 @@ span.event-date img {
   content: '';
 }
 
-.event-item:hover {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+a.cart-button:hover {
+  background-color: #9b65e4;
+  border-color: #9b65e4;
 }
