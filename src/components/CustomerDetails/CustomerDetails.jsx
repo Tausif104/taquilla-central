@@ -123,7 +123,7 @@ const CustomerDetails = () => {
                 </div>
                 <div className='confirm-buttons'>
                   <button className='cancel-button'>Cancelar pedido</button>
-                  <Link className='solid-btn' to='/customer-details'>
+                  <Link className='solid-btn' to='/thank-you'>
                     <i className='fas fa-shopping-cart'></i> Continuar
                   </Link>
                 </div>

@@ -1,0 +1,21 @@
+.thank-you-section {
+  background-color: #fbfbfb;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.thank-you-section h1 {
+  color: #322670;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.thank-you-section p {
+  color: #424245;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.8;
+}

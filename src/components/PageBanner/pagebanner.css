@@ -31,6 +31,10 @@ section.page-banner-section {
   margin-right: 10px;
 }
 
+section.page-banner-section.privacy-policy {
+  padding-bottom: 130px;
+}
+
 @media screen and (max-width: 991px) {
   .page-banner-button {
     text-align: left;

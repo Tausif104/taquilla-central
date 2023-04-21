@@ -3,7 +3,9 @@ import Logo from './logo.png'
 import GooglePlay from './googleplay.png'
 import AppStore from './appstore.png'
 import Payment from './payment.png'
+import USA from './usa.svg'
 import './footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -47,6 +49,12 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
+
+              <div className='language-switcher'>
+                <span>
+                  <img src={USA} alt='' /> English <i className='fas fa-angle-down'></i>
+                </span>
+              </div>
             </div>
           </Col>
           <Col xl={3} lg={6}>
@@ -63,13 +71,13 @@ const Footer = () => {
                   <a href=''>Aviso Legal</a>
                 </li>
                 <li>
-                  <a href=''>Terminos y condiciones</a>
+                  <Link to='/privacy-policy'>Terminos y condiciones</Link>
                 </li>
                 <li>
                   <a href=''>Política de Cookies</a>
                 </li>
                 <li>
-                  <a href=''>Política de Privacidad</a>
+                  <Link to='/privacy-policy'>Política de Privacidad</Link>
                 </li>
               </ul>
             </div>

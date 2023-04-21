@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Col, Container, Row, Button, Offcanvas } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Col, Container, Row, Offcanvas } from 'react-bootstrap'
+import { Link, useLocation } from 'react-router-dom'
 import './header.css'
 import Logo from './images/logo.svg'
 import Hamburger from './images/hamburger.svg'
@@ -12,6 +12,10 @@ const Header = () => {
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
+  // finding location
+  const location = useLocation()
+  const routeName = location.pathname.split('/')[1]
+
   return (
     <>
       <Offcanvas show={show} onHide={handleClose}>
@@ -20,7 +24,7 @@ const Header = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.</Offcanvas.Body>
       </Offcanvas>
-      <header id='top'>
+      <header id='top' className={routeName ? routeName : 'page-header'}>
         <Container>
           <Row className='align-items-center'>
             <Col xs={4}>

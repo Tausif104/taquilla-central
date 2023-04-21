@@ -189,7 +189,7 @@ p.ticket-price span {
   margin-bottom: 35px;
 }
 
-a.solid-btn {
+.solid-btn {
   background-color: #9b65e4;
   width: 100%;
   display: inline-block;
@@ -201,7 +201,7 @@ a.solid-btn {
   margin-top: 177px;
 }
 
-a.solid-btn i {
+.solid-btn i {
   margin-right: 8px;
 }
 

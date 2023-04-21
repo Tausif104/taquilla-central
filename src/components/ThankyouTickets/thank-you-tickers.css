@@ -1,0 +1,222 @@
+.thank-you-page-details {
+  margin: 100px 0;
+}
+
+.thank-you-tickets {
+  border: 1px solid #e5ecfe;
+  border-radius: 20px;
+  padding: 40px 30px;
+}
+
+.thank-you-ticket-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thank-you-ticket-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #322670;
+  font-family: 'roboto';
+}
+
+.thank-you-ticket-content p {
+  color: #424245;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+span.ticket-id {
+  font-size: 18px;
+  display: inline-block;
+}
+
+span.ticket-id strong {
+  color: #322670;
+}
+
+.primary-btn {
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  background-color: #9b65e4;
+  display: inline-block;
+  padding: 15px 26px;
+  border-radius: 6px;
+}
+
+button.primary-btn i {
+  margin-left: 10px;
+}
+
+.thank-you-tickets p.ticket-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.thank-you-ticket-bottom p {
+  color: #322670;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'roboto';
+}
+
+.thank-you-ticket-item {
+  border-bottom: 1px solid #e5ecfe;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.thank-you-ticket-bottom p {
+  margin-bottom: 0;
+}
+
+.thank-you-ticket-bottom {
+  margin-top: 30px;
+}
+
+.bordered-btn {
+  color: #9b65e4;
+  border: 2px solid #9b65e4;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.thank-you-customer-info {
+  border: 1px solid #e5ecfe;
+  padding: 40px 30px;
+}
+
+.thank-you-customer-info h3 {
+  font-size: 24px;
+  color: #322670;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.thank-you-customer-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.thank-you-customer-info ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.thank-you-customer-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.thank-you-customer-info ul li span {
+  font-size: 18px;
+}
+
+.thank-you-customer-info ul li span:first-child {
+  color: #7b788a;
+}
+.thank-you-customer-info ul li span:last-child {
+  color: #322670;
+  font-weight: 600;
+}
+
+span.line-break {
+  background-color: #e5ecfe;
+  display: block;
+  height: 1px;
+  margin: 25px 0;
+}
+
+.thank-you-customer-info {
+  border-radius: 20px;
+}
+
+.primary-btn {
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #f8f2ff;
+  color: #9b65e4;
+}
+
+a.bordered-btn {
+  transition: 0.3s;
+}
+
+a.bordered-btn:hover {
+  background-color: #9b65e4;
+  color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+  .thank-you-customer-info h3 {
+    font-size: 22px;
+  }
+
+  .thank-you-ticket-wrapper {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .thank-you-customer-info {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .thank-you-ticket-item {
+    flex-direction: column;
+  }
+
+  .thank-you-ticket-wrapper {
+    flex-direction: column;
+  }
+
+  .thank-you-ticket-wrapper {
+    max-width: 100%;
+    text-align: left;
+    align-items: start !important;
+  }
+
+  .thank-you-ticket-price {
+    text-align: left !important;
+  }
+
+  .thank-you-ticket-content {
+    margin-left: 0 !important;
+    text-align: left;
+  }
+
+  .thank-you-ticket-thumb {
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  .thank-you-ticket-bottom .button-wrapper {
+    text-align: left;
+    margin-top: 15px;
+  }
+  .thank-you-customer-info ul li span {
+    font-size: 15px;
+  }
+  .thank-you-section h1 {
+    font-size: 34px;
+  }
+
+  .thank-you-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .thank-you-page-details {
+    margin: 50px 0;
+  }
+}

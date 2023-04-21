@@ -1,0 +1,138 @@
+section.privacy-policy-section {
+  margin: 100px 0;
+}
+
+.accordion-item {
+  padding-bottom: 30px;
+}
+
+h2.accordion-header button {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0;
+  box-shadow: none !important;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h2.accordion-header {
+  border: none !important;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-body {
+  padding: 0;
+  padding-top: 25px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.accordion-body ul li a {
+  color: #424245;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordion-body ul li {
+  margin-bottom: 13px;
+}
+
+button.accordion-button:not(.collapsed) {
+  color: #9b65e4;
+}
+
+button.accordion-button {
+  color: #322670;
+}
+
+button.accordion-button:not(.collapsed) i {
+  transform: rotate(90deg);
+}
+
+button.accordion-button i {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.privacy-content-item h3 {
+  color: #322670;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.privacy-content-item p {
+  color: #424245;
+  font-size: 22px;
+}
+
+.privacy-content-item p {
+  margin-bottom: 25px;
+}
+
+.privacy-content-item p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-content-item {
+  margin-bottom: 50px;
+}
+
+.privacy-content-item:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-policy-accordion {
+  margin-right: 50px;
+}
+
+.privacy-policy-accordion {
+  position: sticky;
+  top: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  h2.accordion-header button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .privacy-policy-accordion {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  section.privacy-policy-section {
+    margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .privacy-content-item h3 {
+    font-size: 22px;
+  }
+
+  .privacy-content-item p {
+    font-size: 16px;
+  }
+}
